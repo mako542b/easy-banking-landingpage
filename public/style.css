@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+    @apply bg-gradient-to-r from-green-500 to-blue-400 hover:from-green-300 hover:to-blue-200
+}
+
+.after {
+    @apply relative hover:after:absolute hover:after:-bottom-8 hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
+}
+
+.link {
+    @apply text-gray-700 font-medium cursor-pointer hover:text-blue-400
+}

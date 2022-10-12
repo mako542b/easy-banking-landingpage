@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.aspect-custom-1 {
+    aspect-ratio: 4/3;
+}
+
 .gradient {
     @apply bg-gradient-to-r from-green-500 to-blue-400 hover:from-green-300 hover:to-blue-200
 }
 
 .after {
-    @apply relative hover:after:absolute hover:after:-bottom-8 hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
+    @apply relative hover:after:absolute lg:hover:after:-bottom-9 lg:hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
 }
 
 .link {
@@ -18,11 +22,27 @@
     width: 150%;
 }
 
+.min-h-10 {
+    min-height: 10rem;
+}
+
+.inset-x-10-custom {
+    inset-inline: 10%;
+}
+
+.svg-rev {
+    @apply row-start-3 lg:row-start-1 mx-auto lg:mx-0
+}
 
 
-@media (min-width:1000px) {
+
+@media (min-width:1024px) {
     .-left-10pr {
         left:-10%;
+    }
+
+    .max-h-none {
+        max-height:none;
     }
 
 
@@ -34,6 +54,6 @@
     }
     
     .min-h-150 {
-        min-height: 35rem;
+        min-height: 40rem;
     }
     }

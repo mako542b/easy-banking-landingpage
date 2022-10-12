@@ -13,3 +13,27 @@
 .link {
     @apply text-gray-700 font-medium cursor-pointer hover:text-blue-400
 }
+
+.w-150 {
+    width: 150%;
+}
+
+
+
+@media (min-width:1000px) {
+    .-left-10pr {
+        left:-10%;
+    }
+
+
+    .w-115 {
+        width: clamp(40rem, 110%, 60rem);
+        /* width:110%; */
+        /* min-width: 40rem; */
+        /* max-width: 60rem; */
+    }
+    
+    .min-h-150 {
+        min-height: 35rem;
+    }
+    }

@@ -2,14 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.aspect-custom-1 {
+    aspect-ratio: 4/3;
+    max-height: 16rem;
+}
+
 .gradient {
     @apply bg-gradient-to-r from-green-500 to-blue-400 hover:from-green-300 hover:to-blue-200
 }
 
 .after {
-    @apply relative hover:after:absolute hover:after:-bottom-8 hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
+    @apply relative hover:after:absolute md:hover:after:-bottom-8 md:hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
 }
 
 .link {
     @apply text-gray-700 font-medium cursor-pointer hover:text-blue-400
 }
+
+.w-150 {
+    width: 150%;
+}
+
+.min-h-10 {
+    min-height: 10rem;
+}
+
+.inset-x-10-custom {
+    inset-inline: 10%;
+}
+
+.menu-close {
+    display: none;
+}
+
+.hamburger[aria-expanded] > .menu-open {
+    display:none
+}
+
+.hamburger[aria-expanded] > .menu-close {
+    display: block;
+}
+
+.svg-rev {
+    @apply row-start-3 lg:row-start-1 mx-auto lg:mx-0
+}
+
+
+
+@media (min-width:1024px) {
+    .-left-10pr {
+        left:-10%;
+    }
+
+    .max-h-none {
+        max-height:none;
+    }
+
+
+    .w-115 {
+        width: clamp(40rem, 110%, 60rem);
+    }
+    
+    .min-h-150 {
+        min-height: 40rem;
+    }
+    }

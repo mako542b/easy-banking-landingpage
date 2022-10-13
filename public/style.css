@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .aspect-custom-1 {
     aspect-ratio: 4/3;
+    max-height: 16rem;
 }
 
 .gradient {
@@ -11,7 +13,7 @@
 }
 
 .after {
-    @apply relative hover:after:absolute lg:hover:after:-bottom-9 lg:hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
+    @apply relative hover:after:absolute md:hover:after:-bottom-8 md:hover:after:inset-x-0 hover:after:h-1 after:bg-green-500
 }
 
 .link {
@@ -28,6 +30,18 @@
 
 .inset-x-10-custom {
     inset-inline: 10%;
+}
+
+.menu-close {
+    display: none;
+}
+
+.hamburger[aria-expanded] > .menu-open {
+    display:none
+}
+
+.hamburger[aria-expanded] > .menu-close {
+    display: block;
 }
 
 .svg-rev {
@@ -48,9 +62,6 @@
 
     .w-115 {
         width: clamp(40rem, 110%, 60rem);
-        /* width:110%; */
-        /* min-width: 40rem; */
-        /* max-width: 60rem; */
     }
     
     .min-h-150 {
